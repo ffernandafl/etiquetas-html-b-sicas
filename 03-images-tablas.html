@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UFT-8" />
+    <title>Images, tablas y forms</title>
+</head>
+
+<body>
+    <h1>Images, tablas y forms</h1>
+    <h3>Imágenes</h3>
+    <img
+        src="https://static.wikia.nocookie.net/memes-pedia/images/2/2c/89592b3392fee110134235e95d80dbf7.jpg/revision/latest/scale-to-width-down/350?cb=20200527113030&path-prefix=es">
+    <img src="hbd.jpg" alt="Feliz cumpleaños, de parte de Cheems" title="Feliz cumpleños, Carlos" width="200"
+        height="200">
+
+    <!-- Para que la imagen cambie de tamaño sin deformarse, se puede poner solo uno, ya sea el tamaño de la altura o ancho y el otro se calcula automaticamente -->
+
+    <!-- Tr representa la fila y td las columnas, el th se usa para los títulos de la tabla, pues los diferencia. Border es para poner el borde de la tabla, se edita en css -->
+    <h3>Tablas</h3>
+    <table border="1">
+        <tr>
+            <th>Horario</th>
+            <th>Materia</th>
+        </tr>
+        <tr>
+            <td>09:00 - 10:00</td>
+            <td>Programación</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Algoritmos</td>
+        </tr>
+        <tr>
+            <td>11:00 - 13:00</td>
+            <td>Programación orientada a objetos</td>
+        </tr>
+    </table>
+    <hr />
+
+    <center>
+        <h3>Mi horario de clases</h3>
+    </center>
+    <!-- Encabezados horario, días de la semana. Por lo menos 5 row sin contar el encabezado -->
+    <center>
+        <table border="1">
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Matemáticas</td>
+                <td>Español</td>
+                <td>Matemáticas</td>
+                <td>Español</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Biología</td>
+                <td>Química</td>
+                <td>Biología</td>
+                <td>Química</td>
+                <td>Biología</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Física</td>
+                <td>Español</td>
+                <td>Física</td>
+                <td>Español</td>
+                <td>Física</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td>Matemáticas</td>
+                <td>Libre</td>
+                <td>Matemáticas</td>
+                <td>Libre</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <td>Ed. Física</td>
+                <td>Español</td>
+                <td>Ed. Física</td>
+                <td>Español</td>
+                <td>Ed. Física</td>
+            </tr>
+        </table>
+    </center> <hr />
+
+    <!-- Unir de arriba para abajo rowspan="#" de un lado a otro colspan="#"-->
+    <center><h3>Unir celdas</h3></center>
+    <center>
+        <table border="1">
+            <tr>
+                <th>Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <td>Matemáticas</td>
+                <td rowspan="3">Español</td>
+                <td>Matemáticas</td>
+                <td>Español</td>
+                <td>Matemáticas</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>Biología</td>
+                <td>Química</td>
+                
+                <td>Química</td>
+                <td>Biología</td>
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>Física</td>
+                <td>Español</td>
+                
+                <td>Español</td>
+                <td>Física</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td>Matemáticas</td>
+                <td>Libre</td>
+                <td colspan="3">Matemáticas</td>
+                
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                <td>Ed. Física</td>
+                <td>Español</td>
+                <td>Ed. Física</td>
+                <td>Español</td>
+                <td>Ed. Física</td>
+            </tr>
+        </table>
+    </center> <hr />
+
+    <!-- Ejercicio -->
+    <center>
+        <table border="1">
+            <tr>
+                <td>Rojo</td>
+                <td colspan="2">Verde</td> 
+            </tr>
+            <tr>
+                <td>Café</td>
+                <td>Marrón</td>
+                <td>Tinto</td>
+            </tr>
+            <tr>
+                <td colspan="3">Naranja</td>
+            </tr>
+            <tr>
+                <td colspan="2">Blanco</td>
+                <td>Negro</td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

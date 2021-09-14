@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formularios</title>
+</head>
+
+<body>
+    <center>
+        <h1>Formularios</h1>
+    </center>
+
+    <!-- action se refiere a la acción que se realizara o hacia donde se va a enviar la informacion del formulario. Metod hace referencia DEL MÉTODO HTTP usado en que se enviaran los datos, hay método GET(es el método usado por defecto) y POST (Este esconde los datos para que no sean visibles) -->
+    <form>
+        <p>
+            <label for="name">Nombre: </label>
+            <input type="text" name="name" /> <br />
+        </p>
+        <p>
+            <label for="email">Correo electrónico: </label>
+            <input type="email" name="email" /> <br />
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" name="password"> <br />
+        </p>
+        <p>
+            <label for="number">Número</label>
+            <input type="number" name="number">
+        </p>
+        <p>
+            <label for="">Publicación</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <label for="">Color favorito</label>
+            <select name="color" id="">
+                <option value="1">Rojo</option>
+                <option value="2">Verde</option>
+                <option value="3">Azul</option>
+                <option value="4">Rosa</option>
+                <option value="5">Morado</option>
+            </select>
+        </p>
+        <p>
+            <label for="">Selecciona tu rango de edad</label> <br  />
+        <p>
+            <input type="radio" name="edad" id=""> De 18 a 22
+        </p>
+            
+            <label for="">De 23 a 28</label>
+            <input type="radio" name="edad" id="">
+            <label for="">De 29 a 59</label>
+            <input type="radio" name="edad" id="">
+        </p>
+        <p>
+            <label for="">¿Te gustan los perritos?</label> <br />
+            <label for="">Yess</label>
+            <input type="checkbox">
+            <label for="">Nup</label>
+            <input type="checkbox">
+        </p>
+        <!-- <p>
+            <input type="submit" value="Guardar datos">
+        </p> (forma viejita) -->
+        <button type="submit">Guardar datos</button>
+    </form>
+</body>
+
+</html>
