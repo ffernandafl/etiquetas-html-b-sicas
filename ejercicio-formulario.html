@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="esp">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio formulario</title>
+</head>
+
+<body>
+    <center>
+        <img src="https://res.cloudinary.com/generation/image/upload/w_2000,h_1000,c_fill,g_auto/mexico/2019/04/video-mexico-cashier-thumb.jpg"
+            height="500" />
+    </center>
+    <center>
+        <h1>Ejercicio Formulario</h1>
+        <h3>Solucitud para entrar a Generation</h3>
+    </center>
+    <form method=post>
+        <center>
+            <p>
+                <label for="name">Nombre: </label>
+                <input type="text" name="name" /> <br />
+            </p>
+            <p>
+                <label for="email">Correo electrónico: </label>
+                <input type="email" name="email" /> <br />
+            </p>
+            <p>
+                <label for="number">Número de teléfono</label>
+                <input type="number" name="number">
+            </p>
+            <p>
+                <label for="">¿Cuántos años tienes?</label> <br />
+                <select name="edad" id="">
+                    <option value="1">De 18 a 24</option>
+                    <option value="2">De 25 a 31</option>
+                    <option value="3">De 32 a 39</option>
+                    <option value="4">Más de 40</option>
+                </select>
+                <!-- <label for="">De 18 a 24</label>
+                <input type="checkbox">
+                <label for="">De 25 a 31</label>
+                <input type="checkbox">
+                <label for="">De 32 a 39</label>
+                <input type="checkbox"> -->
+                <!-- <input type="number" name="edad" > -->
+
+                <!-- <p>
+                    <input type="radio" name="edad" id=""> De 18 a 22
+                </p>
+                    <input type="radio" name="edad" id=""> De 23 a 28
+                <p>
+                    <input type="radio" name="edad" id="">De 29 a 34
+                </p>
+                    <input type="radio" name="edad" id="">Más de 35
+                </p> -->
+            <p>
+                <label for="">¿Por qué te interesaría participar en Generation?</label> <br />
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="">¿Tienes experiencia programando?</label>
+                <select name="experiencia" id="">
+                    <option value="1">Sí</option>
+                    <option value="2">No</option>
+                </select>
+            </p>
+            <p>
+                <label for="">¿Estás dispuesto a comprometerte a completar el programa?</label> <br />
+                <label for="">Sí</label>
+                <input type="checkbox">
+                <label for="">No</label>
+                <input type="checkbox">
+            </p>
+            <button type="submit">Enviar solicitud</button>
+        </center>
+    </form>
+</body>
+
+</html>
